@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>NinTalk</title>
+  </head>
+  <body>
+    <header>
+      <h1>NinTalk</h1>
+    </header>
+
+    <div class="contents">
+      <% @tweets.each do |tweet| %>
+        <div class="message clearfix">
+          <%= image_tag 'cat1.png' %>
+          <div class="message_box">
+            <p class="user_name">
+              james
+            </p>
+            <p class="text">
+              <%= tweet.text %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+      <div class="message clearfix">
+        <%= image_tag 'cat1.png' %>
+        <div class="message_box">
+        </div>
+      </div>
+      <div class="message clearfix">
+        <%= image_tag 'cat1.png' %>
+        <div class="message_box">
+        </div>
+      </div>
+
+      <div class="message clearfix">
+        <%= image_tag 'cat1.png' %>
+        <div class="message_box">
+        </div>
+      </div>
+      <div class="message clearfix">
+        <%= image_tag 'cat1.png' %>
+        <div class="message_box">
+        </div>
+      </div>
+      <div class="message clearfix">
+        <%= image_tag 'cat1.png' %>
+        <div class="message_box">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
